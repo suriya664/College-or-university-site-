@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gallery - IronGate University">
+    <title>Gallery | IronGate University</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/gallery.css">
+</head>
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">IRONGATE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">ABOUT US</a></li>
+                    <li class="nav-item"><a class="nav-link" href="vision-mission.html">VISION & MISSION</a></li>
+                    <li class="nav-item"><a class="nav-link" href="courses.html">COURSES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="departments.html">DEPARTMENTS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="admissions.html">ADMISSIONS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="fees-scholarships.html">FEES & SCHOLARSHIPS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="campus-life.html">CAMPUS LIFE</a></li>
+                    <li class="nav-item"><a class="nav-link" href="facilities.html">FACILITIES</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="gallery.html">GALLERY</a></li>
+                    <li class="nav-item"><a class="nav-link" href="placements.html">PLACEMENTS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events-notices.html">EVENTS & NOTICES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link btn-dashboard-nav" href="student-dashboard.html">DASHBOARD</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link btn-login" href="login.html">LOGIN / REGISTER</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Gallery Hero -->
+    <section class="gallery-hero">
+        <div class="container">
+            <h1 class="page-title">CAMPUS GALLERY</h1>
+            <p class="hero-text">Explore our campus through stunning visuals showcasing facilities, events, and student life.</p>
+        </div>
+    </section>
+
+    <!-- Gallery Filter -->
+    <section class="gallery-filter-section">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">ALL</button>
+                <button class="filter-btn" data-filter="campus">CAMPUS</button>
+                <button class="filter-btn" data-filter="events">EVENTS</button>
+                <button class="filter-btn" data-filter="facilities">FACILITIES</button>
+                <button class="filter-btn" data-filter="students">STUDENTS</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid (Masonry Style) -->
+    <section class="gallery-grid-section">
+        <div class="container">
+            <div class="gallery-masonry">
+                <div class="gallery-item" data-category="campus">
+                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&q=80" alt="Campus View" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h4>Campus View</h4>
+                        <p>Main building architecture</p>
+                    </div>
+                </div>
+                <div class="gallery-item large" data-category="facilities">
+                    <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=800&q=80" alt="Library" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h4>Library</h4>
+                        <p>Modern learning center</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="events">
+                    <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=80" alt="Tech Symposium" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h4>Tech Symposium</h4>
+                        <p>Annual technology event</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="students">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&q=80" alt="Student Life" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h4>Student Life</h4>
+                        <p>Campus activities</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="campus">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80" alt="Sports Complex" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h4>Sports Complex</h4>
+                        <p>Athletic facilities</p>
+                    </div>
+                </div>
+                <div class="gallery-item large" data-category="facilities">
+                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80" alt="Research Lab" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h4>Research Lab</h4>
+                        <p>Advanced laboratories</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="events">
+                    <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=600&q=80" alt="Cultural Festival" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h4>Cultural Festival</h4>
+                        <p>Annual celebration</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="students">
+                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&q=80" alt="Graduation" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h4>Graduation</h4>
+                        <p>Commencement ceremony</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="campus">
+                    <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&q=80" alt="Garden Area" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h4>Garden Area</h4>
+                        <p>Beautiful campus grounds</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="facilities">
+                    <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=600&q=80" alt="Auditorium" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h4>Auditorium</h4>
+                        <p>Event venue</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="events">
+                    <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=600&q=80" alt="Career Fair" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h4>Career Fair</h4>
+                        <p>Job opportunities</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="students">
+                    <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&q=80" alt="Study Groups" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h4>Study Groups</h4>
+                        <p>Collaborative learning</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-background"></div>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="footer-title">IRONGATE UNIVERSITY</h4>
+                    <p class="footer-text">Where Precision Meets Performance. Shaping the future through excellence in education.</p>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-heading">ACADEMICS</h5>
+                    <ul class="footer-links">
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="departments.html">Departments</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-heading">CAMPUS</h5>
+                    <ul class="footer-links">
+                        <li><a href="campus-life.html">Campus Life</a></li>
+                        <li><a href="facilities.html">Facilities</a></li>
+                        <li><a href="events-notices.html">Events</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-heading">CONTACT</h5>
+                    <ul class="footer-links">
+                        <li>+1 (555) 123-4567</li>
+                        <li>info@irongate.edu</li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 IronGate University. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cursor Glow Effect -->
+    <div class="cursor-glow" id="cursor-glow"></div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Prevent Bootstrap Dropdowns on Mobile/Tablet -->
+    <script>
+        (function() {
+            // Function to disable Bootstrap dropdowns on mobile/tablet
+            function disableBootstrapDropdowns() {
+                if (window.innerWidth <= 991) {
+                    document.querySelectorAll('.dropdown-toggle').forEach(function(toggle) {
+                        toggle.removeAttribute('data-bs-toggle');
+                        toggle.removeAttribute('data-bs-auto-close');
+                        toggle.setAttribute('data-mobile-dropdown', 'true');
+                        
+                        // Change href to prevent page jump
+                        if (toggle.getAttribute('href') === '#') {
+                            toggle.setAttribute('href', 'javascript:void(0);');
+                        }
+                        
+                        try {
+                            if (typeof bootstrap !== 'undefined' && bootstrap.Dropdown) {
+                                const instance = bootstrap.Dropdown.getInstance(toggle);
+                                if (instance) {
+                                    instance.dispose();
+                                }
+                            }
+                        } catch(e) {
+                            // Ignore errors
+                        }
+                    });
+                }
+            }
+            
+            // Run immediately
+            disableBootstrapDropdowns();
+            
+            // Run after DOM is ready
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', function() {
+                    disableBootstrapDropdowns();
+                    setTimeout(disableBootstrapDropdowns, 200);
+                });
+            } else {
+                disableBootstrapDropdowns();
+                setTimeout(disableBootstrapDropdowns, 200);
+            }
+            
+            // Run after Bootstrap loads
+            window.addEventListener('load', function() {
+                setTimeout(disableBootstrapDropdowns, 100);
+                setTimeout(disableBootstrapDropdowns, 300);
+            });
+            
+            // Run on resize
+            let resizeTimer;
+            window.addEventListener('resize', function() {
+                clearTimeout(resizeTimer);
+                resizeTimer = setTimeout(disableBootstrapDropdowns, 100);
+            });
+            
+            // Also intercept Bootstrap dropdown initialization
+            if (typeof bootstrap !== 'undefined' && bootstrap.Dropdown) {
+                const originalGetInstance = bootstrap.Dropdown.getInstance;
+                bootstrap.Dropdown.getInstance = function(element) {
+                    if (window.innerWidth <= 991) {
+                        const toggle = element;
+                        if (toggle && toggle.hasAttribute('data-mobile-dropdown')) {
+                            return null;
+                        }
+                    }
+                    return originalGetInstance.call(this, element);
+                };
+            }
+        })();
+    </script>
+    
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+    <script>
+        // Gallery Filter
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                const filter = this.dataset.filter;
+                document.querySelectorAll('.gallery-item').forEach(item => {
+                    if (filter === 'all' || item.dataset.category === filter) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
